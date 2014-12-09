@@ -1,0 +1,17 @@
+PODS:
+  - SillyPod (0.0.1)
+  - UIColor+FlatColors (0.0.2)
+
+DEPENDENCIES:
+  - SillyPod (from `.`)
+  - UIColor+FlatColors
+
+EXTERNAL SOURCES:
+  SillyPod:
+    :path: .
+
+SPEC CHECKSUMS:
+  SillyPod: 62f2793426889dd0bf9872ec824a56bac9b8db38
+  UIColor+FlatColors: 15506ef6472e26a751033f2f2469283800bcb906
+
+COCOAPODS: 0.35.0
