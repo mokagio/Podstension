@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <UIColor+FlatColors.h>
+#import <SillyClass.h>
 
 @interface ViewController ()
+
+@property (nonatomic, strong) IBOutlet UILabel *sillyLabel;
 
 @end
 
@@ -16,12 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.view.backgroundColor = [UIColor flatPomegranateColor];
+    self.sillyLabel.textColor = [UIColor flatCloudsColor];
+    self.sillyLabel.text = [SillyClass sillyMethod];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 @end

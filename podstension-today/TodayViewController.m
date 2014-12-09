@@ -8,8 +8,12 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import <UIColor+FlatColors.h>
+#import <SillyClass.h>
 
 @interface TodayViewController () <NCWidgetProviding>
+
+@property (nonatomic, strong) IBOutlet UILabel *sillyLabel;
 
 @end
 
@@ -17,7 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    self.sillyLabel.textColor = [UIColor flatPomegranateColor];
+    self.sillyLabel.text = [SillyClass sillyMethod];
 }
 
 - (void)didReceiveMemoryWarning {
